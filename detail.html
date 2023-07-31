@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+    <title>The Movie Database(TMDB)</title>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgba(3,37,65); height:70px; ">
+        <div class="container-fluid">
+            <a class="logo " href="#">
+                <img src="file:///C:/Users/agokc/Desktop/series/image/logo.svg" width="150" height="40" style="margin-left: 20px;
+      margin-right: 20px;" />
+
+            </a>
+
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="font-family: Source Sans Pro,Arial,sans-serif; font-size:15px; font-weight:bold; margin-right:15px;">
+                            Movies
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#" style="font-size: 15px;">Popular</a></li>
+                            <li><a class="dropdown-item" href="#" style="font-size: 15px;">Now Playing</a></li>
+                            <li><a class="dropdown-item" href="#" style="font-size: 15px;">Upcoming</a></li>
+                            <li><a class="dropdown-item" href="#" style="font-size: 15px;">Top Rated</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="font-family: Source Sans Pro,Arial,sans-serif; font-size:15px; font-weight:bold; margin-right:15px;">
+                            TVShows
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="font-family: Source Sans Pro,Arial,sans-serif; font-size:15px; font-weight:bold; margin-right:15px;">
+                            People
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown text-white" style="width:10px;">
+                        <a class="nav-link dropdown text-white" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false"
+                            style="font-family: Source Sans Pro,Arial,sans-serif; font-size:15px; font-weight:bold; margin-right:15px;">
+                            More
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <a class="logo " href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16" style="color:white; margin-top: 5px;">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                        </svg>
+                    </a>
+                    <button class="btn btn-outline-light" type="submit" style="width:35px; height:32px; margin-left: 15px;
+      margin-right: 20px; font-size:13px; text-align:center;  margin-top:5px; font-weight:bold; ">EN</button>
+                    <a class="nav-link dropdown text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                        style="font-family: Source Sans Pro,Arial,sans-serif; font-size:15px; font-weight:bold; margin-right:15px;">
+                        Login
+                    </a>
+                    <a class="nav-link dropdown text-white" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                        style="font-family: Source Sans Pro,Arial,sans-serif; font-size:15px; font-weight:bold; margin-right:15px;">
+                        JoinTMDB
+                    </a>
+                    <a class="logo " href="#">
+                        <img src="C:\Users\agokc\Desktop\series\image\search.jpg" width="25" height="25" style="margin-left: 15px;
+      margin-right: 20px;" />
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-body" style="padding-left: 500px; color: black;">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: black; font-family: Source Sans Pro,Arial,sans-serif;">
+                            Overview
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: black; font-family: Source Sans Pro,Arial,sans-serif; ">
+                            Media
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: black; font-family: Source Sans Pro,Arial,sans-serif;">
+                            Fandom
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: black;font-family: Source Sans Pro,Arial,sans-serif;">
+                            Share
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="header"
+        style="background-image:url('https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/znUYFf0Sez5lUmxPr3Cby7TVJ6c.jpg');background-position:right; background-repeat: no-repeat;  background-size:cover;  background-attachment:fixed;  height: 500px; padding-left: 100px; ">
+        <div class="card mb-3" style="background-color: transparent; border-color: transparent;">
+            <div class="row g-0" style="padding-top: 20px; ">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="image/mov1.jpg"
+                        style=" width: 300px; border-radius: 10px; " />
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h1 class="card-title"
+                            style="color: white; font-weight: bolder; font-family: Source Sans Pro,Arial,sans-serif;">
+                            The Little Mermaid(2023)</h1>
+                        <p class="card-text" style="color: white;">05/26/2023(US) • Adventure, Family, Fantasy, Romance
+                            • 2h 15m</p>
+
+                        <button type="button" class="btn btn-primary"
+                            style="border-radius: 30px; background-color: rgba(3,37,65); border-color: rgba(3,37,65); margin-left: 20px; background-image: url('image/imdb.png'); width: 62px; height: 62px; font-weight: 650; font-size: 17px; font-family: 'Source Sans Pro',Arial,sans-serif; text-align: center;">
+                            65%
+                        </button>
+                        <a href="#" style="text-decoration: none; font-weight: bolder; color:white">User Score</a>
+                        <button type="button" class="btn btn-primary"
+                            style="border-radius: 30px; background-color: rgba(3,37,65); border-color: rgba(3,37,65); margin-left: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                class="bi bi-list-ul" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn btn-primary"
+                            style="border-radius: 30px; background-color: rgba(3,37,65); border-color: rgba(3,37,65); margin-left: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="btn btn-primary"
+                            style="border-radius: 30px; background-color: rgba(3,37,65); border-color: rgba(3,37,65); margin-left: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor"
+                                class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z">
+                                </path>
+                            </svg>
+                        </button>
+                        <button type="button" class="btn btn-primary"
+                            style="border-radius: 30px; background-color: rgba(3,37,65); border-color: rgba(3,37,65); margin-left: 20px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" style="margin-bottom: 5px;"
+                                fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg>
+                        </button>
+                        <a href="#"
+                            style=" margin-left: 20px; color: white; text-decoration: none; margin-top: 10px; font-weight: bolder;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-play-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                            </svg>
+                            Play Trailer
+                        </a>
+                        <h3
+                            style="color: white; opacity: .7; margin-top: 20px; font-weight: 400; font-style: italic; font-size: 1.1em;">
+                            Watch and you'll
+                            see, some day I'll be, part of your world!</h3>
+                        <h3 style="color: white; margin-top: 10px; font-weight: 600;  font-size: 1.3em;"> Overview</h3>
+                        <p style="color: white;">The youngest of King Triton’s daughters, and the most defiant, Ariel
+                            longs to find out more about the world beyond the sea, and while visiting the surface, falls
+                            for the dashing Prince Eric. With mermaids forbidden to interact with humans, Ariel makes a
+                            deal with the evil sea witch, Ursula, which gives her a chance to experience life on land,
+                            but ultimately places her life – and her father’s crown – in jeopardy.</p>
+                        <a href="#">
+                            <a href="#" style="text-decoration: none; color: white; font-weight: bolder;">Rob
+                                Marshall</a>
+                            <a href="#"
+                                style="margin-left: 200px; text-decoration: none; color: white; font-weight: bolder;">David
+                                Magee</a>
+                            <p style="color: white;">Director</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container" style=" margin-left: 75px;  margin-top: 20px;">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="col" style="width: 500px;">
+                <div class="p-3">
+                    <h2 style="font-family: 'Source Sans Pro',Arial,sans-serif;">Top Billed Cast</h2>
+                </div>
+            </div>
+            <div class="col" style="margin-left: 400px;">
+                <div class="p-3">
+                    <div class="btn-group" role="group" aria-label="Basic outlined example"
+                        style="border-radius: 50px;">
+                        <a href="#" style=" color: black; text-decoration: none; ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg>
+                        </a>
+                        <a href="#" style=" color: black; text-decoration: none;  margin-left: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg>
+                        </a>
+                        <a href="#" style=" color: black; text-decoration: none;  margin-left: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                        <p style="margin-left: 10px; font-size: 20px; margin-bottom: 15px;"> |</p>
+                        <a href="index.html" style=" color: black; text-decoration: none;  margin-left: 10px;">
+                            <img src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-351-link-5f643a86c2515cb06ea08ebc798941824f76bbcea4ed571222a81f271b30c7f3.svg"
+                                width="30" height="30">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="overflow: hidden; width: 100%; ">
+        <div class="sol" style="width: 75%; float: left;">
+            <div class="row">
+                <div class="col-sm-2 " style="width: 130px; ">
+                    <a href="detail.html">
+                        <img src="image/basrol.jpg" style=" width: 130px; border-radius: 10px;" />
+                    </a>
+                    <br></br>
+                    <a href="#" title="The Little Mermaid"
+                        style=" text-align:left; font-weight: bolder; color: black; text-decoration:none ">Halley Bailey
+                    </a>
+                    <p class="card-text">Ariel</p>
+                </div>
+                <div class="col-sm-2 " style="width: 130px; margin-left: 10px;">
+                    <a href="detail.html">
+                        <img src="image/basrol2.jpg" style=" width: 130px; border-radius: 10px;" />
+                    </a>
+                    <br></br>
+                    <a href="#" title="The Little Mermaid"
+                        style=" text-align:left; font-weight: bolder; color: black; text-decoration:none ">Jonah Hauer-King
+                    </a>
+                    <p class="card-text">Prince Eric</p>
+                </div>
+                <div class="col-sm-2 " style="width: 130px; margin-left: 10px;">
+                    <a href="detail.html">
+                        <img src="image/basrol3.jpg" style=" width: 130px; border-radius: 10px;" />
+                    </a>
+                    <br></br>
+                    <a href="#" title="The Little Mermaid"
+                        style=" text-align:left; font-weight: bolder; color: black; text-decoration:none ">Daveed Diggs
+                    </a>
+                    <p class="card-text">Sebastian (voice)</p>
+                </div>
+                <div class="col-sm-2 " style="width: 130px; margin-left: 10px;">
+                    <a href="detail.html">
+                        <img src="image/basrol4.jpg" style=" width: 130px; border-radius: 10px;" />
+                    </a>
+                    <br></br>
+                    <a href="#" title="The Little Mermaid"
+                        style=" text-align:left; font-weight: bolder; color: black; text-decoration:none ">Awkwafina
+                    </a>
+                    <p class="card-text">Scuttle (voice)</p>
+                </div>
+                <div class="col-sm-2 " style="width: 130px; margin-left: 10px;">
+                    <a href="detail.html">
+                        <img src="image/basrol5.jpg" style=" width: 130px; border-radius: 10px;" />
+                    </a>
+                    <br></br>
+                    <a href="#" title="The Little Mermaid"
+                        style=" text-align:left; font-weight: bolder; color: black; text-decoration:none ">Jacob Tremblay
+                    </a>
+                    <p class="card-text">Flounder (voice)</p>
+                </div>
+                <div class="col-sm-2 " style="width: 130px; margin-left: 10px;">
+                    <a href="detail.html">
+                        <img src="image/basrol6.jpg" style=" width: 130px; border-radius: 10px;" />
+                    </a>
+                    <br></br>
+                    <a href="#" title="The Little Mermaid"
+                        style=" text-align:left; font-weight: bolder; color: black; text-decoration:none ">Noma Dumezweni
+                    </a>
+                    <p class="card-text">Queen Selina</p>
+                </div>
+                
+              </div>
+
+              <a href="#" style="text-decoration: none; color: black; font-weight: bolder; font-family: 'Source Sans Pro',Arial,sans-serif;">Full Cast & Crew</a>
+              <div class="vr" style=" border-bottom: 1px solid #bebebe; margin-top: 40px; margin-bottom: 40px;"></div>
+              <p style="color: black; font-weight: bolder; font-size: 18px; font-family: 'Source Sans Pro',Arial,sans-serif;">Social
+            <a href="#" style="margin-left: 50px; text-decoration: none; color: #000000;">Reviews</a>
+            <a href="#" style="margin-left: 40px; text-decoration: none; color: #000000;">Discussions</a>
+            </p>
+              <div class="card text-dark bg-light mb-3" style="max-width: 900px; background-color: white; border-radius: 10px;">
+                <div class="card-header" style="background-color: white;">
+                    <a href="index.html" style=" color: black; text-decoration: none;  margin-left: 10px; margin-right: 10px; font-weight: bolder; font-family: 'Source Sans Pro',Arial,sans-serif;">
+                        <img src="image/yorum.jpg"
+                            width="40" height="40" style="border-radius: 20px; margin-right: 10px; ">
+                            A review by Manuel Sao Bento 
+                           
+                    </a>
+
+                
+                <div class="card-body" style=" background-color: white; font-family: 'Source Sans Pro',Arial,sans-serif;">
+                    <p class="card-text">FULL SPOILER-FREE REVIEW @ https://www.firstshowing.net/2023/review-rob-marshalls-the-little-mermaid-enriches-the-original/</p>
+                  <p class="card-text">"The Little Mermaid enriches virtually every narrative aspect compared to the original, deepening Ariel and Eric's arcs while exploring the same core themes without losing any of its predecessor's essence. The relationship between the protagonists is unquestionably more complex and emotionally compelling, while the secondary characters - namely Sebastian and Scuttle - remain genuinely hilarious. Halle Bailey is VERY impressive and the cast accompanies her excellently....<a href="#" style="color: #000000;">read the rest.</a></p>
+                </div>
+            </div>
+              </div>
+              <a href="#" style="text-decoration: none; color: black; font-weight: bolder;  font-family: 'Source Sans Pro',Arial,sans-serif;">Read All Reviews</a>
+              <div class="vr" style=" border-bottom: 1px solid #bebebe; margin-top: 40px; margin-bottom: 40px; opacity: 0.7;"></div>
+              <p style="color: black; font-weight: bolder; font-size: 17px; font-family: 'Source Sans Pro',Arial,sans-serif;">Media
+                <a href="#" style="margin-left: 50px; text-decoration: none; color: #000000;">Most Popular</a>
+                <a href="#" style="margin-left: 40px; text-decoration: none; color: #000000;">Videos</a>
+                <a href="#" style="margin-left: 40px; text-decoration: none; color: #000000;">Backdrops</a>
+                <a href="#" style="margin-left: 40px; text-decoration: none; color: #000000;">Posters</a>
+                </p>
+                <a href="https://www.youtube.com/watch?v=kpGo2_d3oYE" type="button" class="btn btn-primary" 
+                style="border-radius: 20px; background-image:url('image/background.jpg');   height: 350px; width: 850px;" >
+                
+                <button type="button" class="btn btn-primary" 
+                style="border-radius: 40px; background-color: black; border-color:black; opacity: 0.7;  margin-top : 150px; height: 70px; width: 70px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                class="bi bi-play-fill" viewBox="0 0 16 16" >
+                <path
+                    d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+            </svg>
+            </button>
+                        </a>
+                            
+                        </section>
+                  <div class="vr" style=" border-bottom: 1px solid #bebebe; margin-top: 40px; margin-bottom: 40px;"></div>
+                  <a href="#" style=" text-decoration: none; color: black; font-weight: bolder;  font-family: 'Source Sans Pro',Arial,sans-serif;">Recommendations</a>
+                  <div class="row" style="margin-top: 20px;">
+                    <div class="col-sm-3 " style=" width: 200px; ">
+                        <a href="#">
+                            <img src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg" style=" height: 120px; width: 250px; border-radius: 10px;" />
+                        </a>
+                        <a href="#" title="The Little Mermaid"
+                            style=" text-align:left;  color: black; text-decoration:none ">
+                            Daybreak in Udi </a>
+                        
+                    </div>
+                    <div class="col-sm-3 " style="margin-left: 70px; width: 200px; ">
+                        <a href="#">
+                            <img src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg" style=" height: 120px; width: 250px; border-radius: 10px;" />
+                        </a>
+                        <a href="#" title="The Little Mermaid"
+                            style=" text-align:left;  color: black; text-decoration:none "> Woodshock</a>
+                    </div>
+                    <div class="col-sm-2 " style="margin-left: 70px; width: 180px; ">
+                        <a href="#">
+                            <img src="https://www.themoviedb.org/assets/2/v4/glyphicons/basic/glyphicons-basic-38-picture-grey-c2ebdbb057f2a7614185931650f8cee23fa137b93812ccb132b9df511df1cfac.svg" style=" height: 120px; width: 250px; border-radius: 10px;" />
+                        </a>
+                        <br></br>
+                        <a href="#" title="The Little Mermaid"
+                            style=" text-align:left; color: black; text-decoration:none ">Jujutsu Kaisen</a>
+                    </div>
+                </div>
+        </div>
+        <div class="sag" style="width: 25%; float: right; ">
+            
+            <p style="color: black; font-weight: bolder; margin-left: 20px;"> Status <br> Released</p>
+         
+            <p style="color: black; font-weight: bolder; margin-left: 20px;"> Original Language <br> English</p>
+            <p style="color: black; font-weight: bolder; margin-left: 20px;"> Budget <br> $250,000,000.00</p>
+            <p style="color: black; font-weight: bolder; margin-left: 20px;"> Revenue <br> $556,713,998.00</p>
+            <p style="color: black; font-weight: bolder; margin-left: 20px;"> Keywords </p>
+            <button type="button" class="btn  btn-sm" style="margin-left: 20px; background-color: #bebebe;">musical</button>
+            <button type="button" class="btn  btn-sm"style="margin-left: 20px; background-color: #bebebe;">mermaid</button>
+            <button type="button" class="btn  btn-sm" style="margin-top: 5px; margin-left: 20px; background-color: #bebebe;">based on fairy table</button>
+            <button type="button" class="btn btn-sm" style="margin-top: 5px; margin-left: 20px; background-color: #bebebe;"> live action remake</button>
+            <div class="vr" style=" border-bottom: 1px solid #bebebe; margin-top: 40px; margin-bottom: 40px; margin-left: 30px;"></div>
+            <p style="color: black; font-weight: bolder; margin-left: 20px;"> Content Score</p>
+            <div class="card text-white  mb-3" style="max-width: 600px; margin-left: 20px; border-radius: 10px;">
+                <div class="card-header" style="background-color: rgba(31.5, 115.5, 157.5, 1); font-weight: bold;">100</div>
+                <div class="card-body" style="background-color: #bebebe; border-color: #bebebe;">
+
+                  <p class="card-text text-dark" >Yes! Looking good!</p>
+                </div>
+              </div>
+
+        </div>
+</div>
+    <div class="footer" style=" background-color: rgba(3,37,65);  left: 0;
+            bottom: 0;
+            width: 100%; height: 250px; margin-top: 30px;">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <img src="image/logo2.svg" class="card-img-top" alt="..." height="100px">
+
+                <a href="#" class="btn btn-light"
+                    style="margin-top: 20px; margin-left: 50px; font-weight: bolder; color: blue; height: 50px;">JOIN
+                    THE COMMUNITY</a>
+            </div>
+            <div class="col" style="color: white; ">
+                <h5 class="card-title" style="font-weight: bolder;">THE BASICS</h5>
+                <p class="card-text">About TMDB <br>
+                    Contact Us<br>
+                    Support Forums<br>
+                    API<br>
+                    System Status</p>
+            </div>
+            <div class="col" style="color: white; ">
+                <h5 class="card-title" style="font-weight: bolder;">THE BASICS</h5>
+                <p class="card-text">About TMDB <br>
+                    Contact Us<br>
+                    Support Forums<br>
+                    API<br>
+                    System Status</p>
+            </div>
+            <div class="col" style="color: white; ">
+                <h5 class="card-title" style="font-weight: bolder;">THE BASICS</h5>
+                <p class="card-text">About TMDB <br>
+                    Contact Us<br>
+                    Support Forums<br>
+                    API<br>
+                    System Status</p>
+            </div>
+            <div class="col" style="color: white; ">
+                <h5 class="card-title" style="font-weight: bolder;">THE BASICS</h5>
+                <p class="card-text">About TMDB <br>
+                    Contact Us<br>
+                    Support Forums<br>
+                    API<br>
+                    System Status</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
